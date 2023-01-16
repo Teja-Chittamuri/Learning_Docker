@@ -1,0 +1,13 @@
+docker images --- To list the images
+docker build -t webapp dockerfile --- To build the docker image
+docker run -d -- To run the docker container in detahc mode
+docker pull --- To pull the docker image from the dockerhub
+docker tag webapp tejachittamuri/webapp:v1 --- To tag docker image
+docker push tejachittamuri/webapp:v1   ---- To push the image to dockerhub
+docker ps --- To list the running containers
+docker ps -a  --- To list all the containers both running and exixted
+docker system prune -a  ---- To remove all the conatiners and images
+docker volume create  db_volume  --- To create a docker volumes
+docker run -d --name webapp -p 80:80 -v db_volume:/var/lib/mysql/ mysql  --- To mount a volume to our container
+docker compose -d --- To run the docker compose file in detach mode
+
